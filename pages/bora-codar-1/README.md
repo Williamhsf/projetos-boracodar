@@ -15,7 +15,6 @@
 
 - Criar um player baseado no layout;
 - Ser responsivo;
-- Player funcional;
 
 ## 🔖 Layout do projeto
 
