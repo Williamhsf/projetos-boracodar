@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- icone -->
+  <link rel="shortcut icon" href="./assets/music.ico" type="image/x-icon"/>
+  <!-- js -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="./src/js/script.js" type="module" defer></script>
+  <!-- css -->
+  <link rel="stylesheet" href="./src/css/main.css"/>
+
+  <title>Music Player</title>
+</head>
+<body>
+  <header>
+    <h1>Music Player</h1>
+    <div class="buttons">
+      <button class="btn">1</button>
+      <button class="btn">2</button>
+      <button class="btn">3</button>
+    </div>
+  </header>
+  <main class="theme1">
+    <div id="music">
+      <img src="./assets/capa.jpg" alt="capa da música"/>
+      <h1>As Above So Below <span>No Spirit, Flâneur </span></h1>
+    </div>
+
+    <div id="controllers">
+      <button id="decrement">
+        <i class="ph ph-rewind"></i>
+      </button>
+
+      <button id="play">
+        <i class="ph ph-play"></i>
+      </button>
+
+      <button id="pause" class="hide">
+        <i class="ph ph-pause"></i>
+      </button>
+      
+      <button id="increment">
+        <i class="ph ph-fast-forward"></i>
+      </button>
+    </div>
+
+    <div id="progress">
+      <input type="range" step="0.1" min="0" max="100" value="0" />
+
+      <div id="time">
+        <div id="currentTime">
+          <span class="minutes">00</span>
+        </div>
+        <div id="totalTime">
+          <span class="minutes">2</span>:<span class="seconds">18</span>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
