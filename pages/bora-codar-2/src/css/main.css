@@ -1,0 +1,106 @@
+/* ----reset---- */
+:root {
+  --color1: #D9CDF7;
+  --color2: #7B61FF;
+  --color3: #271A45;
+  --color4: #242424;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialised;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color1);
+  min-height: 100vh;
+  
+  display: grid;
+  place-content: center;
+}
+
+body * {
+  font-family: "Lato", sans-serif;
+  color: var(--color3);
+  line-height: 100%;
+}
+
+/* ----efeito para o botão close---- */
+#btn-close, 
+#animated {
+  display: none;
+}
+
+/* ----card---- */
+#app {
+  display: flex;
+  align-items: center;
+  gap: 63px;
+  margin: 0 20px;
+}
+
+/* ----product-image---- */
+#product-image {
+  position: relative;
+}
+
+#product-image button {
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+html.animated button#btn-360,
+html.animated img#static {
+  display: none;
+}
+
+html.animated button#btn-close,
+html.animated img#animated {
+  display: initial;
+}
+
+#product-image > img {
+  width: 449px;
+  height: 222px;
+  object-fit: cover;
+}
+
+/* ----product-details---- */
+.product-details h4 {
+  font-weight: 300;
+  font-size: 10px;
+}
+
+.product-details h1 {
+  font-family: "Crimson Pro", serif;
+  font-weight: 600;
+  font-size: 32px;
+
+  margin-top: 12px;
+}
+
+.product-details p {
+  margin-top: 12px;
+  opacity: 0.67;
+}
+
+.product-details button {
+  font-size: 12px;
+  line-height: 16px;
+
+  padding: 8px 16px;
+  border: 0.5px solid var(--color3);
+  border-radius: 18px;
+  background-color: transparent;
+
+  margin-top: 20px;
+
+  cursor: pointer;
+}
