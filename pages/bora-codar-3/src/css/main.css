@@ -1,0 +1,120 @@
+/* -----reset----- */
+:root {
+  --color1: #130F1E;
+  --color2: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color1);
+
+  display: grid;
+  place-content: center;
+  height: 100vh;
+
+  gap: 16px;
+}
+
+/* -----app----- */
+.app {
+  max-width: 360px;
+  padding-inline: 40px;
+}
+
+.app h1 {
+  font-family: "Inter";
+  color: var(--color2);
+  font-size: 32px;
+}
+.app p {
+  margin-top: 8px;
+  color: var(--color2);
+  font-family: "Roboto";
+  opacity: 0.67;
+}
+
+/* -----buttons----- */
+.buttons {
+  display: grid;
+  gap: 32px;
+  margin-top: 100px;
+}
+
+/* -----raiz dos botoes----- */
+.primary {
+  --bg-default: #8257e5;
+  --bg-hover: #9674e5;
+}
+
+.secondary {
+  --bg-default: #3c3748;
+  --bg-hover: #6a617f;
+}
+
+.tertiary {
+  --bg-default: transparent;
+  --bg-hover: transparent;
+}
+
+button {
+  background-color: var(--bg-default);
+  font-family: "Inter";
+  border: none;
+  color: var(--color2);
+  padding: 12px 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+button:hover {
+  background-color: var(--bg-hover);
+}
+
+button:focus {
+  outline: 2px solid #D9CDF7;
+}
+
+button:disabled {
+  background-color: var(--bg-default);
+  opacity: 0.56;
+  cursor: not-allowed;
+}
+
+.loading {
+  cursor: progress;
+}
+
+.loading i {
+  font-size: 16px;
+  animation: spin 700ms infinite linear;
+}
+
+.movable {
+  cursor: move;
+}
+
+.movable i {
+  font-size: 18px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
