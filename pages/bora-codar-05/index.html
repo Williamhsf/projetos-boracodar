@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div id="calculator">
+      <!-- start -->
+      <div id="display">
+        <div id="last-calc">
+          <span></span>
+        </div>
+        <div class="screen-result">
+          <i class="ph ph-equals"></i>
+          <span id="result"></span>
+        </div>
+      </div>
+      <div id="keyboard">
+        <!-- operation top -->
+        <button class="secondary" onclick="back()">ce</button>
+        <button onclick="clean()">c</button>
+        <button onclick="percent()">
+          <i class="ph ph-percent"></i>
+        </button>
+        <button class="tertiary" onclick="insert('/')">
+          <i class="ph ph-divide"></i>
+        </button>
+        <!-- numbers + operations -->
+        <button onclick="insert(7)">7</button>
+        <button onclick="insert(8)">8</button>
+        <button onclick="insert(9)">9</button>
+        <button class="tertiary" onclick="insert('*')">
+          <i class="ph ph-x"></i>
+        </button>
+
+        <button onclick="insert(4)">4</button>
+        <button onclick="insert(5)">5</button>
+        <button onclick="insert(6)">6</button>
+        <button class="tertiary" onclick="insert('-')">
+          <i class="ph ph-minus"></i>
+        </button>
+
+        <button onclick="insert(1)">1</button>
+        <button onclick="insert(2)">2</button>
+        <button onclick="insert(3)">3</button>
+        <button class="tertiary" onclick="insert('+')">
+          <i class="ph ph-plus"></i>
+        </button>
+
+        <button class="secondary" onclick="plusMinus()">
+          <i class="ph ph-plus-minus"></i>
+        </button>
+        <button onclick="insert(0)">0</button>
+        <button onclick="insert('.')">,</button>
+        <button class="quartiary" onclick="equals()">
+          <i class="ph ph-equals"></i>
+        </button>
+      </div>
+      <!-- end -->
+    </div>
+    <script src="./src/js/mains.js"></script>
+  </body>
+</html>
