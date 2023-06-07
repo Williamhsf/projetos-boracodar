@@ -15,7 +15,7 @@
 
 - Criar uma calculadora baseada no layout;
 
-## Desefio:
+## Desafio:
 - Futuramente melhorar a qualidade do código em relação a algumas interações;
 
 ## 🔖 Layout do projeto
