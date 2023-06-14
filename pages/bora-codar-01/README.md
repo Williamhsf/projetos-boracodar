@@ -2,7 +2,6 @@
 
 <div align="center">
   <img src="./assets/screen_music-player.png"/>
-
 </div>
 
 ## 🚀 Projeto feito com:
