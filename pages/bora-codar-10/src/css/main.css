@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+  --color1: #6d67d0;
+  --color2: #c2bff4;
+  --color3: #ffffff;
+  --color4: #dad8f7;
+  --color5: #e7e6fb;
+  --color6: #87ebcd;
+}
+
+/* ----main---- */
+main {
+  min-height: 100vh;
+  background: url(../../assets/bg.jpeg) no-repeat center/cover;
+
+  display: grid;
+  place-content: center;
+  padding: 6.4rem;
+  gap: 2.4rem;
+}
+
+section {
+  background: #6d67d0;
+  backdrop-filter: blur(1rem);
+  border-radius: 1rem;
+}
+
+.temperature-now {
+  background: url(../../assets/bg-temp-now.jpeg) no-repeat;
+  position: relative;
+
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+.temperature-now::before {
+  content: "";
+  width: 17.6rem;
+  height: 17.6rem;
+
+  background: url(../../assets/clouds.svg) no-repeat;
+
+  position: absolute;
+  top: -5.6rem;
+  left: -5.6rem;
+}
+
+.location {
+  justify-self: end;
+  padding: 3.2rem 3.2rem 0;
+
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.location strong {
+  font-size: 1.4rem;
+  color: var(--color2);
+}
+
+.temp {
+  margin: 6rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.temp .number {
+  text-align: center;
+  font-size: 8.8rem;
+  color: var(--color3);
+  gap: 0.4rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.temp .number .maxmin {
+  font-size: 2rem;
+}
+
+.temp .number .maxmin span {
+  color: var(--color2);
+}
+
+.celsius {
+  margin-top: 1.5rem;
+  font-size: 2.4rem;
+  color: var(--color4);
+}
+
+.statistics {
+  padding: 1.2rem;
+
+  display: flex;
+  gap: 0.8rem;
+}
+
+.stats {
+  flex: 1;
+  padding: 1.2rem 1.6rem;
+  background: rgba(102, 96, 200, 0.6);
+  border-radius: 0.6rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.stats .info {
+  color: var(--color5);
+}
+
+.stats .info h5 {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.stats .info h5 span,
+.stats .info p {
+  font-size: 1.2rem;
+}
+
+/* ----Air Quality---- */
+.air-quality {
+  font-weight: 700;
+  text-align: center;
+  display: grid;
+}
+
+h2.title {
+  font-size: 1.6rem;
+  color: var(--color4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 3.2rem;
+}
+
+.air-quality .good {
+  margin-top: 3.2rem;
+  font-size: 1.8rem;
+
+  color: var(--color6);
+}
+
+.air-quality > .number {
+  margin-top: 0.4rem;
+  font-size: 4rem;
+
+  color: var(--color5);
+}
+
+.air-quality .info {
+  display: flex;
+  align-items: center;
+  margin-top: 3.2rem;
+
+  padding: 0 1.6rem 1.6rem;
+}
+
+.air-quality .info .number {
+  flex: 1;
+}
+
+.air-quality .info p {
+  color: var(--color6);
+  font-size: 1.4rem;
+}
+
+/* ----Sun Time---- */
