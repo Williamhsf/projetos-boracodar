@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+}
+
+main {
+    background: url(../img/background.png) center no-repeat;
+    width: 100%;
+    height: 100vh;
+
+    display: grid;
+    place-content: center;
+}
+
+.app {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.side-bar {
+    margin-top: 20%;
+
+    height: 22rem;    
+    padding: 1.2rem;
+}
+
+.side-bar, 
+.nav-bar {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 8rem;
+}
+
+.side-bar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 1.6rem;
+
+    transition: all 0.2s;
+}
+
+.side-bar ul .active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.side-bar ul li {
+    font-size: 2rem;
+    padding: 0.8rem
+}
+
+.side-bar ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+}
+
+/* container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+/* nav-bar */
+.nav-bar {
+    width: 81.6rem;
+    padding: 1.2rem 2rem;
+    border-radius: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.actions {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.nav-bar form {
+    width: calc(100% - 22rem);
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8rem;
+    padding: 1.2rem;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-container input {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    margin-left: 0.8rem;
+}
+
+.input-container input::placeholder {
+    color: #fff;
+}
+
+/* video */
+.video {
+    width: 96rem;
+    height: 54rem;
+    border-radius: 3.2rem;
+    
+    background: url(../img/screen.png) top center no-repeat;
+}
